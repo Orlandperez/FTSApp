@@ -6,32 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FTSApp - UI</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="estrellas.css">
 </head>
 <body>
   <main>
-    <h1>FTSApp - File Transfer Secure</h1>
+    <section class="FTSApp">
 
-    <!-- Sección de carga -->
-    <section class="upload">
-      <h2>Subir archivo</h2>
-      <form id="uploadForm">
-        <input type="file" name="file" id="fileInput" required />
-        <button type="submit">Subir</button>
-      </form>
+      <!-- ESTRELLAS -->
+      <div class="fondo">
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span> 
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+        <span class="estrellas"></span>
+      </div>
+  
+  
+      <h1>FTSApp - File Transfer Secure</h1>
+  
+      <!-- Sección de carga -->
+      <div class="upload">
+        <h2>Subir archivo</h2>
+        <form id="uploadForm">
+          <input type="file" name="file" id="fileInput" required />
+          <button type="submit">Subir</button>
+        </form>
+      </div>
+  
+      <!-- Sección de archivos -->
+      <div class="files">
+        <h2>Archivos en el servidor</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="fileTableBody">
+            <!-- Archivos cargados dinámicamente -->
+          </tbody>
+        </table>
+      </div>
     </section>
-
-    <!-- Sección de archivos -->
-    <section class="files">
-      <h2>Archivos en el servidor</h2>
-      <table>
-        <thead>
-          <tr><th>Nombre</th><th>Acciones</th></tr>
-        </thead>
-        <tbody id="fileTableBody">
-          <!-- Archivos cargados dinámicamente -->
-        </tbody>
-      </table>
-    </section>
+  
   </main>
 
   <script src="main.js"></script>
